@@ -1,0 +1,7 @@
+# Jeu de la Vie de Conway - Dépendances
+# Aucune dépendance externe requise - utilise uniquement la bibliothèque standard Python
+
+# Pour le développement (optionnel):
+# pytest>=7.0.0
+# black>=22.0.0
+# flake8>=4.0.0 
