@@ -21,6 +21,57 @@ git clone <votre-repo>
 cd GameOfLife
 ```
 
+## Configuration de l'environnement 🔧
+
+Trois scripts sont disponibles pour configurer automatiquement l'environnement virtuel Python selon votre système d'exploitation :
+
+### Configuration automatique (recommandée)
+
+```bash
+python setup.py
+```
+
+Ce script universel détecte automatiquement votre OS et lance le script approprié.
+
+### Configuration manuelle par OS
+
+#### Sur Mac/Linux :
+```bash
+./setup_env.sh
+```
+
+#### Sur Windows :
+```cmd
+setup_env.bat
+```
+
+### Que font ces scripts ?
+
+1. 🔍 Détectent si Python est installé
+2. 📦 Créent un environnement virtuel Python (`venv`)
+3. 🔄 Activent l'environnement virtuel
+4. 🔧 Mettent à jour pip à la dernière version
+5. 📚 Installent les dépendances depuis `requirements.txt`
+
+### Activation manuelle de l'environnement
+
+Après la première configuration, vous pouvez activer l'environnement manuellement :
+
+#### Mac/Linux :
+```bash
+source venv/bin/activate
+```
+
+#### Windows :
+```cmd
+venv\Scripts\activate.bat
+```
+
+Pour désactiver l'environnement :
+```bash
+deactivate
+```
+
 ## Utilisation
 
 ### Utilisation basique
